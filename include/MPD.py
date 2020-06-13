@@ -8,6 +8,7 @@ def top_and_bottom(li: list, n: int):
             for i in range(n):
                 returnList.append(li[-1])
                 li.pop()
+        returnList.append(li)
     else:
         while len(li) >= n * 2:
             for i in range(n):
