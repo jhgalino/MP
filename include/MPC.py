@@ -63,7 +63,7 @@ def FCFS(queueOfCustomers: list, numberOfCustomers: int):
         customer.inQueue = False
         customer.beingServed = False
         customer.finished = False
-    return totalTime / numOfPeopleServed
+    return totalTime / numOfPeopleServed  # potential error, limit decimal places
 
 
 def STF(queueOfCustomers: list, numberOfCustomers: int):
@@ -96,7 +96,7 @@ def STF(queueOfCustomers: list, numberOfCustomers: int):
         customer.inQueue = False
         customer.beingServed = False
         customer.finished = False
-    return totalTime / numOfPeopleServed
+    return totalTime / numOfPeopleServed  # potential error
 
 
 # input
