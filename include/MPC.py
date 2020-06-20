@@ -107,5 +107,5 @@ for n in range(numberOfCustomers):
     queueOfCustomers.append(Person(x, y, z))
 
 # output
-print(FCFS(queueOfCustomers, numberOfCustomers))
-print(STF(queueOfCustomers, numberOfCustomers))
+print("{:.2f}".format(FCFS(queueOfCustomers, numberOfCustomers)))
+print("{:.2f}".format(STF(queueOfCustomers, numberOfCustomers)))
