@@ -71,5 +71,3 @@ def differentiate(fxn: str):
 
     return diff
 
-
-print(differentiate("5826(x)^5"))
