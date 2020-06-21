@@ -37,12 +37,16 @@ def differentiate(fxn: str):
             tempFxn[2] -= 1
             if tempFxn[2] == 1:
                 tempFxn[2] = ""
+            else:
+                tempFxn[2] = "^{}".format(tempFxn[2])
             diff = "{}({}){}".format(tempFxn[0], tempFxn[1], tempFxn[2])
         else:
             tempFxn[0] = int(tempFxn[2][1])
             tempFxn[2] = int(tempFxn[2][1]) - 1
             if tempFxn[2] == 1:
                 tempFxn[2] = ""
+            else:
+                tempFxn[2] = "^{}".format(tempFxn[2])
             diff = "{}({}){}".format(tempFxn[0], tempFxn[1], tempFxn[2])
     elif hasTrig:
         if tempFxn[0] == "sin":
@@ -66,3 +70,6 @@ def differentiate(fxn: str):
         diff = "".join(diff)
 
     return diff
+
+
+print(differentiate("5826(x)^5"))
