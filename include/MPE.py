@@ -71,3 +71,6 @@ def differentiate(fxn: str):
 
     return diff
 
+
+print(differentiate("971(x)^6"))
+

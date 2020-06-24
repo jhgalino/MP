@@ -15,6 +15,7 @@ def top_and_bottom(li: list, n: int):
                 sortedList.append(li[0])
                 li.pop(0)
             break
+
         if len(li) >= n:
             for number in range(n):
                 if type(li[-1]) == list:
@@ -29,4 +30,8 @@ def top_and_bottom(li: list, n: int):
                 sortedList.append(li[-1])
                 li.pop(-1)
             break
+
     return sortedList
+
+
+print(top_and_bottom([1, 2, 3, 4, 5, 6, 7], 2))
